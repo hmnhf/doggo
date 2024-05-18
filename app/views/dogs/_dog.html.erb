@@ -1,0 +1,23 @@
+<div id="dog-preview" class="w-full lg:w-2/3 flex flex-col gap-8">
+  <div
+    class="
+      relative w-full h-96 lg:h-full
+      opacity-0 transition-opacity duration-300 ease-in
+    "
+  >
+    <img
+      class="
+        absolute object-cover inset-0 h-full
+        rounded-lg border-slate-300 shadow-xl
+        transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2
+        transition-transform duration-1000 ease-in-out hover:scale-105
+      "
+      src="<%= image_url %>"
+      onload="
+        this.classList.add('border');
+        this.parentElement.style.opacity = 1;
+      "
+    />
+  </div>
+  <div class="font-bold text-2xl text-center"><%= breed %></div>
+</div>

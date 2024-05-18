@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dog.ceo/api/breed/sheepdog/images/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - httpx.rb/1.2.5
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 18 May 2024 23:09:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '115'
+      X-Powered-By:
+      - PHP/8.1.25
+      Cache-Control:
+      - no-cache, private
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Encoding:
+      - gzip
+      Via:
+      - 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+      X-Cache-Hits:
+      - '0'
+      X-Cache:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=KvJKSYYBzTdxdjEPc8Gj03Ujp%2FmfyKRpdLt1iC36KmsZMjQqua1x44tnZnV4KNO3o60si46DlQvQeqwfvOancAjNsptHs3ONucjC8NDxIErPKpdJurHOEj6CzxnSF2zP%2Bqh8%2F1rT"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 885f8463ac7619a9-FRA
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"https:\/\/images.dog.ceo\/breeds\/sheepdog-shetland\/n02105855_18141.jpg","status":"success"}'
+  recorded_at: Sat, 18 May 2024 23:09:50 GMT
+recorded_with: VCR 6.2.0

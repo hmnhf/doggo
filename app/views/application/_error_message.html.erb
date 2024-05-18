@@ -1,0 +1,13 @@
+<div
+  id="error-message"
+  class="flex justify-center fixed top-14 z-50 left-1/2 transform -translate-x-1/2"
+>
+  <% if flash.key?(:alert) %>
+  <div
+    class="bg-red-100 border border-red-300 font-semibold text-sm text-center text-red-700 px-6 py-3 rounded-md shadow-xl cursor-pointer"
+    onclick="this.classList.add('hidden');"
+  >
+    <%= flash.alert %>
+  </div>
+  <% end %>
+</div>

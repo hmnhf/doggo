@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dog.ceo/api/breed/sheepdog/wrong/images/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - httpx.rb/1.2.5
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 404
+      message: Not Foundnot_found
+    headers:
+      Date:
+      - Sat, 18 May 2024 23:33:45 GMT
+      Content-Type:
+      - application/json
+      X-Powered-By:
+      - PHP/8.1.25
+      Cache-Control:
+      - no-cache, private
+      Access-Control-Allow-Origin:
+      - "*"
+      Via:
+      - 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+      X-Cache-Hits:
+      - '0'
+      X-Cache:
+      - MISS
+      Age:
+      - '0'
+      Vary:
+      - ''
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ipI3jKnNLjNqJaETGhyJCCHRyBAL%2BSZgG0Qsf07nOzhDoosgrcOQ9bNTvawxkdJ89jZuqSMuvkNbIg1LFPucCFNgEdxRL2%2FOlIlBf5YluGwXzrJqEptzCCXaNAEROO24eAhIELXu"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 885fa76c7e0f995a-FRA
+      Content-Encoding:
+      - gzip
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"error","message":"Breed not found (sub breed does not exist)","code":404}'
+  recorded_at: Sat, 18 May 2024 23:33:45 GMT
+recorded_with: VCR 6.2.0

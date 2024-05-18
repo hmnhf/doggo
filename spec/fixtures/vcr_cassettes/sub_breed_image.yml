@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dog.ceo/api/breed/sheepdog/english/images/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - httpx.rb/1.2.5
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 18 May 2024 23:10:43 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '111'
+      X-Powered-By:
+      - PHP/8.1.25
+      Cache-Control:
+      - no-cache, private
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Encoding:
+      - gzip
+      Via:
+      - 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+      X-Cache-Hits:
+      - '0'
+      X-Cache:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=4Q3DXdKo5%2FdtrCdAvmLZqIkh9k4m7wp3jPB2Js%2B1DTd%2FpHC0cVmNXiz5hiK%2FjhQQHxR5n%2FgzrEGRutxNL%2Fj6NKxF6q5iaQ2PjiA%2By5j3M%2FgaYZZSCntSVJEv0nZwpBjPYgZd1HH7"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 885f85b09d8e974c-FRA
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"message":"https:\/\/images.dog.ceo\/breeds\/sheepdog-english\/n02105641_9502.jpg","status":"success"}'
+  recorded_at: Sat, 18 May 2024 23:10:43 GMT
+recorded_with: VCR 6.2.0
